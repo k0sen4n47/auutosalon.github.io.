@@ -1,0 +1,38 @@
+.advantages-block {
+    background: var(--head);
+   padding-top: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+   padding-bottom: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem)  ;
+
+    .advantages-info {
+        display: flex;
+        gap: 30px;
+
+        .title-advant {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 570px;
+            width: 100%;
+            
+        }
+
+        .card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .card {
+                height: 216px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

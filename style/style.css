@@ -1,0 +1,442 @@
+@import url(./all-style/header/heder.css);
+@import url(./all-style/main-banner/main-banner.css);
+@import url(./all-style/autopark/autosalon.css);
+@import url(./all-style/services/services.css);
+@import url(./all-style/stock/style.css);
+@import url(./all-style/stages/style.css);
+@import url(./all-style/advantaes/advantages.css);
+@import url(./all-style/review/review.css);
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OpenSans", sans-serif;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.block {
+  margin-bottom: clamp(2.188rem, 1.875rem + 1.56vw, 3.75rem);
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.navigation .button-weapper {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation .button-weapper .btn.slidee {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 100%;
+}
+
+.navigation .button-weapper .btn.slidee.swiper-button-disabled {
+  background: var(--stroke);
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: unset !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+:root {
+  --bl: #F7F7F7;
+  --bd: #ededed;
+  --card: #ffffff;
+  --stroke: #eaeff7;
+  --second: #c3eeb5;
+  --primary: #05A657;
+  --hover: #3fac1e;
+  --head: #262c36;
+  --text: #909397;
+  --disable: rgba(164, 167, 167, 1);
+}
+
+.head {
+  color: var(--head);
+}
+
+.card {
+  color: var(--card);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.disable {
+  color: var(--disable);
+}
+
+.hover {
+  color: var(--hover);
+}
+
+.text {
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.mega {
+  font-weight: 500;
+  font-size: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem);
+  line-height: 100%;
+}
+
+h1,
+.h1 {
+  font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+  line-height: 100%;
+  font-weight: 600;
+}
+
+h2,
+.h2 {
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+  line-height: 100%;
+  font-weight: 500;
+}
+
+h3,
+.h3 {
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  line-height: 120%;
+  font-weight: 500;
+}
+
+h5,
+.h5 {
+  font-size: clamp(0.875rem, 0.85rem + 0.13vw, 1rem);
+  line-height: 120%;
+  font-weight: 500;
+}
+
+h6,
+.h6 {
+  font-size: clamp(0.75rem, 0.725rem + 0.13vw, 0.875rem);
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.bl {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  line-height: 135%;
+}
+
+.bm {
+  font-weight: 400;
+  font-size: 16;
+  line-height: 135%;
+}
+
+.caption {
+  font-weight: 400;
+  font-size: 14;
+  line-height: 135%;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: clamp(0.875rem, 0.85rem + 0.13vw, 1rem);
+  line-height: 120%;
+  font-weight: 500;
+  color: var(--card);
+  background: var(--primary);
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--hover);
+}
+
+.show-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  background-color: #0056b3;
+}
+
+.btn.white {
+  background: var(--bd);
+  color: var(--text);
+}
+
+.btn.white:hover {
+  color: var(--head);
+}
+
+.btn.empty {
+  color: var(--text);
+  background: var(--bd);
+}
+
+.btn.empty:hover {
+  color: var(--head);
+}
+
+.btn.slidee {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 100%;
+}
+
+.btn.slidee.swiper-button-disabled {
+  background: var(--stroke);
+}
+
+.btn.black {
+  background: var(--head);
+  color: var(--card);
+}
+
+.btn.black:hover {
+  background: var(--primary);
+}
+
+.contact-block {
+  position: relative;
+  background: var(--head);
+  overflow: hidden;
+}
+
+.contact-block .contact-info {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-block .contact-info .left {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-block .contact-info .left .top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-block .contact-info .left .bot {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-block .contact-info .left .bot .bot-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-block .contact-info .left .bot .bot-item img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.contact-block .contact-info .left .bot .bot-item .text-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-block .contact-info .right {
+  right: 0;
+  position: absolute;
+  right: -29%;
+}
+
+#footer {
+  background: var(--head);
+}
+
+#footer .footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-info .top {
+  padding: 60px 0 40px;
+  border-bottom: 1px solid var(--text);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#footer .footer-info .top .header-list {
+  display: flex;
+  gap: 32px;
+}
+
+#footer .footer-info .top .header-list .list-item {
+  list-style: none;
+}
+
+#footer .footer-info .top .header-list .list-item a {
+  color: var(--card);
+}
+
+#footer .footer-info .bot {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.text-politic {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.text-politic h1 {
+  margin-bottom: 20px;
+}
+
+.text-politic p {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+/* Modals */
+
+input {
+  inset: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--bl);
+  border: none;
+  outline: none;
+
+  color: var(--disable);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 14px 13px;
+}
+
+.fancybox-content {
+  border-radius: 10px;
+  padding: 0 !important;
+}
+.fancybox-content .wrapper {
+  cursor: default;
+  padding: 40px;
+  max-width: calc(570px + 80px);
+  background-color: var(--card);
+  border-radius: 10px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fancybox-content .wrapper .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.fancybox-content .bot-modal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.fancybox-content .btn {
+  flex-shrink: 0;
+}

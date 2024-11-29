@@ -1,0 +1,48 @@
+.stages-block {
+    background-image: url(/image/stages/Машина\ 1.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    .stages-all-info {
+        padding-top: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+        padding-bottom: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .title {
+                max-width: 570px;
+                width: 100%;
+            }
+
+            .desc {
+                max-width: 570px;
+                width: 100%;
+            }
+        }
+
+        .bot {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+
+            .card {
+                background: var(--card);
+                padding: 30px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                height: 232px;
+
+                .number {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

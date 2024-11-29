@@ -1,0 +1,87 @@
+.review-block .reviews-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.review-block .reviews-info .top-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.review-block .reviews-info .top-title .title {
+  max-width: 570px;
+  width: 100%;
+}
+.review-block .reviews-info .top-title .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.review-block .reviews-info .top-title .desc .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.review-block .reviews-info .bot-rev {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.review-block .reviews-info .bot-rev .review-card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background: var(--card);
+  transition: all 0.3s ease-in;
+}
+.review-block .reviews-info .bot-rev .review-card:hover {
+  box-shadow: 1px 1px 22px -2px rgba(0, 0, 0, 0.2);
+}
+.review-block .reviews-info .bot-rev .review-card .top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.review-block .reviews-info .bot-rev .review-card .top .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bd);
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  justify-content: center;
+}
+.review-block .reviews-info .bot-rev .review-card .top .avatar .avatar-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.review-block .reviews-info .bot-rev .review-card .top .title-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.review-block .reviews-info .bot-rev .review-card .text-rev {
+  color: var(--text);
+}
+.review-block .reviews-info .bot-rev .review-card .bot {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.review-block .reviews-info .bot-rev .review-card .bot .image-wrap {
+  width: 70px;
+  height: 70px;
+}
+.review-block .reviews-info .bot-rev .review-card .bot .image-wrap .img-rev {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=review.css.map */

@@ -1,0 +1,35 @@
+.services-block .services-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.services-block .services-info .top {
+  display: flex;
+  gap: 30px;
+}
+.services-block .services-info .top .title {
+  max-width: 670px;
+  width: 100%;
+}
+.services-block .services-info .bot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.services-block .services-info .bot .serv-card {
+  padding: 30px;
+  height: 390px;
+  width: 100%;
+  background-position: right bottom;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.services-block .services-info .bot .serv-card .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}/*# sourceMappingURL=services.css.map */

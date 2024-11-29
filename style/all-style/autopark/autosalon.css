@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* скрываем все input[type="radio"], расположенные в .tab
+ .tab > input[type="radio"] {
+   display: none;
+ }
+
+ /* скрываем все .tab-content */
+.tab-content {
+  display: none;
+}
+
+/* отображаем только тот контент, который соответствует отмеченной радоикнопки */
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+  display: block;
+}
+
+.tab > input[type=radio]:checked + label {
+  color: red;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab > input[type=radio] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+  display: block;
+}
+
+.tab > label {
+  cursor: pointer;
+}
+.tab > label:hover {
+  background: var(--stroke);
+  color: var(--head);
+}
+
+.tab > input[type=radio]:checked + label {
+  cursor: pointer;
+  color: var(--head);
+  background-color: var(--bd);
+}
+
+.autopark-block .autopark-all__info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.autopark-block .autopark-all__info .title-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.autopark-block .autopark-all__info .title-wrapper .subtitle {
+  max-width: 470px;
+  width: 100%;
+}
+
+.tab-content {
+  margin-top: 30PX;
+}
+.tab-content .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.tab-content .card-wrapper .card-auto {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  transition: all 0.3s ease-in;
+}
+.tab-content .card-wrapper .card-auto.disable-1 {
+  display: none;
+}
+.tab-content .card-wrapper .card-auto.active {
+  display: block;
+}
+.tab-content .card-wrapper .card-auto:hover {
+  box-shadow: 0px 16px 44px -4px rgba(34, 60, 80, 0.21);
+}
+.tab-content .card-wrapper .card-auto .info-auto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px 20px 20px;
+  background: var(--card);
+}
+.tab-content .card-wrapper .card-auto .info-auto .price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tab-content .card-wrapper .card-auto .info-auto .characteristics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tab-content .card-wrapper .card-auto .info-auto .characteristics .characteristic {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 14px;
+}
+.tab-content .card-wrapper .card-auto .info-auto .characteristics .characteristic .top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tab-content .card-wrapper .card-auto .info-auto .characteristics .characteristic .top .icon {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tab-content .card-wrapper .card-auto .info-auto .characteristics .characteristic .bot {
+  text-align: center;
+}
+.tab-content .card-wrapper .card-auto .info-auto .butons-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tab-content .card-wrapper .card-auto .info-auto .butons-wrapper .btn {
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=autosalon.css.map */

@@ -1,0 +1,41 @@
+.services-block {
+    .services-info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .top {
+            display: flex;
+            gap: 30px;
+
+            .title {
+                max-width: 670px;
+                width: 100%;
+            }
+        }
+
+        .bot {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            .serv-card {
+                padding: 30px;
+                height: 390px;
+                width: 100%;
+                background-position: right bottom;
+                background-size: contain;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: space-between;
+                overflow: hidden;
+
+                .btn {
+                    width: fit-content;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}

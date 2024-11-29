@@ -1,0 +1,46 @@
+.stocl-block {
+    .stock-card {
+        display: flex;
+        gap: 30px;
+
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 770px;
+            padding: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+
+            .title-wrapepr {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .form-info {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+
+                input {
+                    padding: 12px;
+                    background: var(--bd);
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .button-weap {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top:50%;
+        bottom: 50%;
+        z-index: 3;
+    }
+}

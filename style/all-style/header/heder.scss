@@ -1,0 +1,70 @@
+#header {
+    background: var(--head);
+
+    .header-info {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+
+            .header__nav {
+                border-bottom: 1px solid var(--text);
+
+                .header-list {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 15px;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .list-item {
+                        list-style: none;
+
+                        .link {
+                            transition: all 0.3s ease-in;
+                            color: var(--card);
+
+                            &:hover {
+                                color: var(--disable);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .more-info {
+                width: 100%;
+                padding-top: 15px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-between;
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .map {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                    }
+                }
+
+                .consultation {
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        color: var(--hover);
+                    }
+                }
+            }
+        }
+    }
+}

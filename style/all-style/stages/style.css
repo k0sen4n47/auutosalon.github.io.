@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.stages-block {
+  background-image: url(/image/stages/Машина\ 1.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.stages-block .stages-all-info {
+  padding-top: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+  padding-bottom: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.stages-block .stages-all-info .top {
+  display: flex;
+  justify-content: space-between;
+}
+.stages-block .stages-all-info .top .title {
+  max-width: 570px;
+  width: 100%;
+}
+.stages-block .stages-all-info .top .desc {
+  max-width: 570px;
+  width: 100%;
+}
+.stages-block .stages-all-info .bot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.stages-block .stages-all-info .bot .card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 232px;
+}
+.stages-block .stages-all-info .bot .card .number {
+  color: var(--primary);
+}/*# sourceMappingURL=style.css.map */
